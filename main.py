@@ -308,7 +308,8 @@ if __name__ == '__main__':
 			speak("I was created as a Minor project by Radhika and Pearl ")
 
 		elif 'change background' in query:
-			ctypes.windll.user32.SystemParametersInfoW(20, 0, "C:\Users\radhi\Downloads\Sem 5\Python Project (Voice Assistant)\Wallpaper",0)
+			ctypes.windll.user32.SystemParametersInfoW(20, 0, r"C:\Users\radhi\Downloads\Projects\Python Project (Voice Assistant)\Wallpaper", 0)
+
 			speak("Background changed successfully")
 
 		elif "news" in query:
