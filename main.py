@@ -112,7 +112,7 @@ def sendEmail():
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login('radhikaarora366@gmail.com', 'vqjh oyiu rkkd wswm')
+        server.login('radhikaarora366@gmail.com', 'email key')
         server.sendmail('radhikaarora366@gmail.com', to, content)
         server.close()
         speak("Email has been sent!,Your work got much simplified")
@@ -182,7 +182,7 @@ def calculate(query):
         if not query or all(not s.strip() for s in query):
             print("Error: Invalid or empty query provided.")
             return
-    app_id = "T6RQV7-RUKPVP5ATU"
+    app_id = "api-key"
     client = wolframalpha.Client(app_id)
     try:
         res = client.query(' '.join(query))
