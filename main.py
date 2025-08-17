@@ -147,7 +147,7 @@ def NewsFromBBC():
     query_params = {
       "source": "bbc-news",
       "sortBy": "top",
-      "apiKey": "929a777c57844204b8e9b249451050a3"
+      "apiKey":"<api key>"
     }
     main_url = " https://newsapi.org/v1/articles"
  
